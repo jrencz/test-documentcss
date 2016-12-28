@@ -8,6 +8,7 @@
     "watch-styleguide": "documentjs -f -w",
     "serve": "npm start & echo \"TODO: implement browsersync\"",
     "start": "npm run watch-sources & npm run watch-styleguide",
+    "localdev-start": "npm run watch-sources",
     "compile-styleguide": "documentjs",
     "compile-sources": "node-sass ./styles/styles.scss ./dist/styles.css && postcss -c ./postcss-cli-config.json"
   },
