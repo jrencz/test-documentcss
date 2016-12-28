@@ -1,0 +1,19 @@
+{
+  "siteDefaults": {
+    "static": "guide-theme",
+    "templates": "guide-theme/templates"
+  },
+  "sites": {
+    "styles": {
+      "glob": "styles/**/*.{css,scss,md}",
+      "dest": "styleguide",
+      "parent": "styles"
+    },
+    "demos": {
+      "templates": "pages/demos/templates",
+      "glob": "pages/demos/**/*.{css,scss,md}",
+      "dest": "demos",
+      "parent": "demos"
+    }
+  }
+}

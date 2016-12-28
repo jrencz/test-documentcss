@@ -1,0 +1,14 @@
+@import "colors";
+
+/**
+ * @stylesheet states.scss States
+ * @parent Styles.theme
+ **/
+
+/**
+ * @styles states States
+ * @iframe demos/states.html
+ **/
+.active {
+  background: $red;
+}

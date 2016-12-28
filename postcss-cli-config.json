@@ -1,0 +1,12 @@
+{
+  "use": [
+    "autoprefixer",
+    "postcss-discard-comments"
+  ],
+  "input": "./dist/styles.css",
+  "output": "./dist/styles.css",
+  "autoprefixer": {},
+  "postcss-discard-comments": {
+    "removeAll": "true"
+  }
+}

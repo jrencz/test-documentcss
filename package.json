@@ -1,0 +1,21 @@
+{
+  "name": "test-theme",
+  "version": "0.0.1",
+  "description": "style guide demo",
+  "main": "dist/styles.css",
+  "scripts": {
+    "start": "documentjs -f -w",
+    "builddocs": "documentjs",
+    "compile": "node-sass ./styles/styles.scss ./dist/styles.css && postcss -c ./postcss-cli-config.json"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.6.0",
+    "documentjs": "^0.4.4",
+    "node-sass": "^4.1.1",
+    "postcss": "^5.2.8",
+    "postcss-cli": "^2.6.0",
+    "postcss-discard-comments": "^2.0.4"
+  }
+}
