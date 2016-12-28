@@ -4,7 +4,9 @@
   "description": "style guide demo",
   "main": "dist/styles.css",
   "scripts": {
-    "start": "documentjs -f -w",
+    "watchcompile": "watch -p \"./styles/**/*.scss\" -c \"npm run compile\"",
+    "serve": "documentjs -f -w",
+    "start": "npm run serve & npm run watchcompile",
     "builddocs": "documentjs",
     "compile": "node-sass ./styles/styles.scss ./dist/styles.css && postcss -c ./postcss-cli-config.json"
   },
@@ -16,6 +18,7 @@
     "node-sass": "^4.1.1",
     "postcss": "^5.2.8",
     "postcss-cli": "^2.6.0",
-    "postcss-discard-comments": "^2.0.4"
+    "postcss-discard-comments": "^2.0.4",
+    "watch-cli": "^0.2.1"
   }
 }
