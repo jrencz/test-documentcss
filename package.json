@@ -4,11 +4,12 @@
   "description": "style guide demo",
   "main": "dist/styles.css",
   "scripts": {
-    "watchcompile": "watch -p \"./styles/**/*.scss\" -c \"npm run compile\"",
-    "serve": "documentjs -f -w",
-    "start": "npm run serve & npm run watchcompile",
-    "builddocs": "documentjs",
-    "compile": "node-sass ./styles/styles.scss ./dist/styles.css && postcss -c ./postcss-cli-config.json"
+    "watch-sources": "watch -p \"./styles/**/*.scss\" -c \"npm run compile-sources\"",
+    "watch-styleguide": "documentjs -f -w",
+    "serve": "npm start & echo \"TODO: implement browsersync\"",
+    "start": "npm run watch-sources & npm run watch-styleguide",
+    "compile-styleguide": "documentjs",
+    "compile-sources": "node-sass ./styles/styles.scss ./dist/styles.css && postcss -c ./postcss-cli-config.json"
   },
   "author": "",
   "license": "MIT",
