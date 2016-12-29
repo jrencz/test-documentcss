@@ -6,8 +6,8 @@
   "scripts": {
     "watch-sources": "watch -p \"./styles/**/*.scss\" -c \"npm run compile-sources\"",
     "watch-styleguide": "documentjs -f -w",
-    "serve": "npm start & echo \"TODO: implement browsersync\"",
-    "start": "npm run watch-sources & npm run watch-styleguide",
+    "serve": "browser-sync start --config bs-config.js",
+    "start": "npm run watch-sources & npm run watch-styleguide & npm run serve",
     "localdev-start": "npm run watch-sources",
     "compile-styleguide": "documentjs",
     "compile-sources": "node-sass ./styles/styles.scss ./dist/styles.css && postcss -c ./postcss-cli-config.json"
@@ -16,6 +16,7 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.6.0",
+    "browser-sync": "^2.18.5",
     "documentjs": "^0.4.4",
     "node-sass": "^4.1.1",
     "postcss": "^5.2.8",
