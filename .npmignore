@@ -1,0 +1,8 @@
+guide-theme/
+pages/
+.*
+browserslist
+*conf.*
+*config.*
+documentjs.json
+TODO*

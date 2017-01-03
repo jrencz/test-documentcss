@@ -5,9 +5,9 @@
   },
   "sites": {
     "styles": {
-      "glob": "styles/**/*.{css,scss,md}",
+      "glob": "src/**/*.scss",
       "dest": "styleguide",
-      "parent": "styles"
+      "parent": "index"
     },
     "demos": {
       "templates": "pages/demos/templates",
