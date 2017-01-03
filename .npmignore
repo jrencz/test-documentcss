@@ -2,7 +2,6 @@ guide-theme/
 pages/
 .*
 browserslist
-*conf.*
-*config.*
+*conf*
 documentjs.json
 TODO*
