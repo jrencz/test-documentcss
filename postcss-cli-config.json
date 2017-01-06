@@ -3,8 +3,8 @@
     "autoprefixer",
     "postcss-discard-comments"
   ],
-  "input": "./dist/styles.css",
-  "output": "./dist/styles.css",
+  "input": "./dist/*.css",
+  "dir": "./dist/",
   "autoprefixer": {},
   "postcss-discard-comments": {
     "removeAll": "true"

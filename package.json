@@ -2,15 +2,15 @@
   "name": "test-theme",
   "version": "0.0.1",
   "description": "style guide demo",
-  "main": "dist/styles.css",
+  "main": "dist/index.css",
   "scripts": {
-    "watch-sources": "watch -p \"./styles/**/*.scss\" -c \"npm run compile-sources\"",
+    "watch-sources": "watch -p \"./src/**/*.scss\" -c \"npm run compile-sources\"",
     "watch-styleguide": "documentjs -f -w",
     "serve": "browser-sync start --config bs-config.js",
     "start": "npm run watch-sources & npm run watch-styleguide & npm run serve",
-    "localdev-start": "npm run watch-sources",
     "compile-styleguide": "documentjs",
-    "compile-sources": "node-sass ./styles/styles.scss ./dist/styles.css && postcss -c ./postcss-cli-config.json"
+    "compile-sources": "node-sass -r --output dist src && postcss -c ./postcss-cli-config.json",
+    "localdev-start": "npm run watch-sources"
   },
   "author": "",
   "license": "MIT",
