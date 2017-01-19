@@ -1,42 +1,5 @@
-/**
- * @page index Styles
- *
- * See [color-palette]
- *
- * See [states]
- */
-/**
- * @stylesheet colors.scss Colors
- * @parent Styles.theme
- **/
-/**
- * @styles color-palette Color Palette
- * @description
- * Foo
- *
- * @iframe demos/color-palette.html
- **/
-/**
- * @stylesheet colors.scss Colors
- * @parent Styles.theme
- **/
-/**
- * @styles color-palette Color Palette
- * @description
- * Foo
- *
- * @iframe demos/color-palette.html
- **/
-/**
- * @stylesheet states.scss States
- * @parent Styles.theme
- **/
-/**
- * @styles states States
- * @iframe demos/states.html
- **/
-.active {
-  background: #f00; }
+.active{
+  background:#f00; }
 
-.demo-component {
-  padding: 0.5em 10px; }
+.demo-component{
+  padding:0.5em 10px; }

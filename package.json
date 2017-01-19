@@ -10,6 +10,12 @@
     "start": "npm run watch-sources & npm run watch-styleguide & npm run serve",
     "compile-styleguide": "documentjs",
     "compile-sources": "node-sass -r --output dist src && postcss -c ./postcss-cli-config.json",
+    "lint": "npm-run-all --parallel lint:*",
+    "lint:js": "eslint .",
+    "lint:styles": "stylelint \"src/**/*.scss\" --syntax scss",
+    "lint:editorconfig": "lintspaces --editorconfig .editorconfig --ignores \"js-comments\" --matchdotfiles \"./!(node_modules|styleguide|demos|dist|.tmp|.git|.idea)/**/!(.DS_Store)*\" \"./!(.DS_Store|LICENSE)*\"",
+    "pretest": "npm run lint",
+    "test": "echo \"No tests yet\"; exit 0;",
     "localdev-start": "npm run watch-sources"
   },
   "author": "",
@@ -18,10 +24,17 @@
     "autoprefixer": "^6.6.0",
     "browser-sync": "^2.18.5",
     "documentjs": "^0.4.4",
+    "eslint": "^3.12.2",
+    "eslint-config-example-shared": "github:jrencz/eslint-config-example-shared",
+    "lintspaces": "^0.5.0",
+    "lintspaces-cli": "github:jrencz/lintspaces-cli#dotfiles",
+    "npm-run-all": "^4.0.1",
     "node-sass": "^4.1.1",
     "postcss": "^5.2.8",
     "postcss-cli": "^2.6.0",
     "postcss-discard-comments": "^2.0.4",
+    "stylelint": "^7.7.1",
+    "stylelint-config-example-shared": "github:jrencz/stylelint-config-example-shared",
     "watch-cli": "^0.2.1"
   }
 }
